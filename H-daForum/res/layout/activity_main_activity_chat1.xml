@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityChat1" >
+    
+
+    <!-- Header start -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.20"
+        android:orientation="vertical" >
+
+        <!-- view tht shows current batch info -->
+
+        <TextView
+            android:id="@+id/currentScreenInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/selected_batch"
+            android:textColor="#F7F7F7"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- create topic Button -->
+
+        <Button
+            android:id="@+id/createTopic"
+            android:text="@string/create_topic"
+            style="@style/ButtonLook.TitleForumPage"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Header ends -->
+
+
+    <!-- show progress -->
+
+    <LinearLayout
+        android:id="@+id/progressOfForumList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Loading Forum Topics... "
+            android:textSize="18sp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            
+             />
+    </LinearLayout>
+
+    <!-- Chat Body starts -->
+
+    <ListView
+        android:id="@+id/chatBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+    </ListView>
+
+    <!-- Chat Body ends -->
+
+
+    <!-- Footer starts -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="0.4"
+        android:background="#DEDEDE"
+        android:orientation="horizontal" >
+
+        <!-- settings Button -->
+
+        <Button
+            android:id="@+id/settingsButton"
+            style="@style/ButtonLook.ForumPage"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp"
+            android:text="@string/settingButton" />
+
+        <!-- exchange key Button -->
+
+        <Button
+            android:id="@+id/exchangeKeyShow"
+            style="@style/ButtonLook.ForumPage"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:text="@string/exchangeKeyButton" />
+
+        <!-- exchange key Button -->
+
+        <Button
+            android:id="@+id/prvForum"
+            style="@style/ButtonLook.ForumPage"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:text="@string/prvForum" />
+
+
+
+    </LinearLayout>
+    <!-- Footer ends -->
+
+</LinearLayout>

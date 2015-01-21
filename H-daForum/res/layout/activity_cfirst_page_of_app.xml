@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context="com.mytalentfolio.h_daforum.CFirstPageOfApp" >
+
+    <TextView
+        android:id="@+id/editText1"
+        android:background="@drawable/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+          android:textColor="#bbbbbb"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:ems="10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="15dp"
+        android:text="NOTE: For first time entrance to the H-da Discussion forum use Registration Button to register else Sign In if you are already a registered user" />
+
+    <Button
+        android:id="@+id/Login"
+        style="@style/ButtonLook.MainPage"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Login"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/Register"
+        style="@style/ButtonLook.MainPage"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:textAlignment="center" />
+
+</LinearLayout>

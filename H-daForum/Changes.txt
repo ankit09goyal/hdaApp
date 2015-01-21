@@ -1,0 +1,14 @@
+Changes done from my side to HDAForum7
+
+LoginActivity.java file
+-In onCreate "CconnectToServer.mContext=getApplicationContext();"
+
+ForumTopicDetail.java file
+-In class PostCommentTask
+  -Method onPostExecute "if (result.equals("[\"1\"]\n"))"
+
+Creating a raw folder in res and putting the server certificate in the raw folder
+
+CconnectToServer.java File
+-Added a member "static Context mContext"
+-Changed the whole method "connect"

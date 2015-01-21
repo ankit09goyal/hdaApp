@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PBLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <!-- Header start -->
+
+    <LinearLayout
+        android:id="@+id/PBheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- view tht shows current batch info -->
+
+        <TextView
+            android:id="@+id/PBcurrentScreenInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/selected_batch"
+            android:textColor="#F7F7F7"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- create topic Button -->
+
+
+    </LinearLayout>
+
+    <!-- Header ends -->
+
+
+    <!-- show progress -->
+
+    <LinearLayout
+        android:id="@+id/PBprogressOfForumList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Loading Forum Topics... "
+            android:textSize="18sp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            
+             />
+    </LinearLayout>
+
+    <!-- Chat Body starts -->
+
+    <ListView
+        android:id="@+id/PBchatBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+    </ListView>
+
+    <!-- Chat Body ends -->
+
+
+    <!-- Footer starts -->
+
+    
+    <!-- Footer ends -->
+
+
+
+</LinearLayout>

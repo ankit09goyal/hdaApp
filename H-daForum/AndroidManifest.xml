@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mytalentfolio.h_daforum"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo1"
+        android:theme="@style/CustomTheme" >
+        
+        <activity
+            android:name="com.mytalentfolio.h_daforum.MainActivityChat1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mytalentfolio.h_daforum.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.mytalentfolio.h_daforum.ForumTopicDetail"
+            android:label="@string/title_activity_forum_topic_detail" >
+        </activity>
+        <activity
+            android:name="com.mytalentfolio.h_daforum.CPostForumTopic"
+            android:label="@string/title_activity_cpost_forum_topic" >
+        </activity>
+        <activity
+            android:name="com.mytalentfolio.h_daforum.CFirstPageOfApp"
+            android:label="@string/title_activity_cfirst_page_of_app" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mytalentfolio.h_daforum.CRegisterUserActivity"
+            android:label="@string/title_activity_cregister_user" >
+        </activity>
+        <activity
+            android:name="com.mytalentfolio.h_daforum.CVerifyLinkSent"
+            android:label="@string/title_activity_cverify_link_sent" >
+        </activity>
+        <activity
+            android:name="com.mytalentfolio.h_daforum.CExchangeKey"
+            android:label="@string/title_activity_cexchange_key" >
+        </activity>
+        <activity 
+            android:name="com.mytalentfolio.h_daforum.CPrevBatchActivity"
+            android:label="Earlier Batches"></activity>
+            <activity 
+            android:name="com.mytalentfolio.h_daforum.CPreviousBatchForum"
+            android:label="Old Batch"></activity>
+            <activity 
+            android:name="com.mytalentfolio.h_daforum.CforumDetailOldBatches"
+            android:label="Old Batch Topic Detail"></activity>
+            <activity 
+            android:name="com.mytalentfolio.h_daforum.CSettings"
+            android:label="Profile"></activity>
+            
+    </application>
+
+</manifest>

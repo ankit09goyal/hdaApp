@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- App theme -->
+    <color name="custom_theme_color">#F0F0F0</color>
+
+    <style name="CustomTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+        <item name="android:colorBackground">@color/custom_theme_color</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#333333</item>
+        <item name="android:titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#F3F3F3</item>
+    </style>
+
+    <!-- Button Look round one -->
+    <style name="ButtonLook" parent="@android:style/ButtonBar">
+        <item name="android:textColor">#F3F3F3</item>
+        <item name="android:textAlignment">inherit</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <!-- Text Look Round one -->
+    <style name="TextLook" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#bbbbbb</item>
+        <item name="android:background">@drawable/text_selector</item>
+        <item name="android:textColorHint">#DEDEDE</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <!-- Styles for Main Page -->
+    <style name="ButtonLook.MainPage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!-- Styles for Registration Page -->
+    <style name="ButtonLook.RegPage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        
+    </style>
+    <!-- Styles for Login Page -->
+    <style name="ButtonLook.LoginPage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+    </style>
+
+    <style name="TextLook.LoginPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+    <!-- Styles for List View -->
+    <style name="ListName" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginBottom">6dip</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Styles for Forum Page -->
+    <style name="ButtonLook.ForumPage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonLook.TitleForumPage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <!-- Styles for Forum Page -->
+    <style name="ButtonLook.PostPage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="TextLook.PostPage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+    <style name="TextLook.ForumTopicPage">
+        
+    </style>
+
+</resources>

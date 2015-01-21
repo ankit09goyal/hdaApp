@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/old_batch_selection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+      
+    <TextView
+        android:id="@+id/editText1"
+         android:background="@drawable/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#767676"
+        android:gravity="top"
+        android:layout_gravity="top"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:text ="List of Old batches are in drop down list. Choose your desired batch year." />
+
+     
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:entries="@array/batch_arrays"
+        android:prompt="@string/batch_prompt" />
+
+    <Button
+        android:id="@+id/Batchselcted"
+        android:background="@drawable/button_selector"
+        android:layout_gravity="center"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+</LinearLayout>

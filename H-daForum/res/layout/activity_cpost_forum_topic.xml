@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mytalentfolio.h_daforum.CPostForumTopic"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/textLayut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#41B7D8"
+            android:layout_marginTop="2dp"
+            android:ems="10"    
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Title of topic " />
+
+        <TextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:ems="10"
+            android:textColor="#767676"
+            android:text="(Example: System design Lecture?) " />
+
+        <EditText
+            android:id="@+id/forumTitle"
+            style="@style/TextLook.PostPage"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="start"
+            android:hint="Title"
+            android:textAlignment="textStart" >
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E7492F"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Maximum Words for title: 140"
+            android:textAlignment="center"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#41B7D8"
+            android:textStyle="bold"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Description " />
+
+        <TextView
+            android:id="@+id/autoCompleteTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#767676"
+            android:textSize="8sp"
+            android:text="(Example: Which professor is taking the class, and at which room?)" />
+
+        <EditText
+            android:id="@+id/forumDesc"
+            style="@style/TextLook.PostPage"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:layout_weight="4"
+            android:hint="Description"
+            android:textAlignment="viewStart" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E7492F"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:text="Minimum Words for Discription: 30 "
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/postTopic"
+            style="@style/ButtonLook.PostPage"
+            android:text="@string/postTopic" />
+    </LinearLayout>
+
+</LinearLayout>
